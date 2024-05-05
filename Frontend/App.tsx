@@ -159,38 +159,38 @@ export default App;
 
 
 const styles = StyleSheet.create({
-  background:{
+  background: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
 
-  logo:{
+  logo: {
     flex: 1,
     justifyContent: 'center',
     marginTop: 'auto',
-    marginBottom:'auto',
+    marginBottom: 'auto',
     alignContent: 'center',
   },
 
-  login:{
+  login: {
     flex: 2,
     alignItems: 'center',
     width: '90%'
   },
 
-  Image:{
+  Image: {
     width: 230,
     height: 200,
   },
 
-  btnsetaimg:{
+  btnsetaimg: {
     height: 100,
     width: 100,
   },
 
-  btnsetahome:{
+  btnsetahome: {
     height: 100,
     width: 100,
     borderColor: 'black',
@@ -201,20 +201,20 @@ const styles = StyleSheet.create({
     marginTop: 180,
   },
 
-  perfilBar:{
+  perfilBar: {
     flexDirection: "row",
   },
 
-  buttonbarperfil:{
+  buttonbarperfil: {
     backgroundColor: "#ddd",
     padding: 15,
     borderWidth: 1,
     borderColor: "#000",
-    
+
   },
 
-  input:{
-    backgroundColor:'white',
+  input: {
+    backgroundColor: 'white',
     width: '90%',
     marginBottom: 20,
     color: '#222',
@@ -226,13 +226,13 @@ const styles = StyleSheet.create({
   },
 
 
-  textintro:{
+  textintro: {
     marginTop: -160,
     textAlign: 'left',
     marginLeft: -200,
   },
 
-  textbemvindo:{
+  textbemvindo: {
     color: 'black',
     fontSize: 15,
     textAlign: 'center',
@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
 
-  bntHome:{
+  bntHome: {
     marginTop: '30%',
     backgroundColor: '#fff',
     justifyContent: 'center',
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
 
   },
 
-  bntCriar:{
+  bntCriar: {
     marginTop: '30%',
     backgroundColor: 'white',
     justifyContent: 'center',
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
 
-  bntHomeBemVindo:{
+  bntHomeBemVindo: {
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
@@ -276,13 +276,13 @@ const styles = StyleSheet.create({
     marginBottom: '50%',
   },
 
-  btnTextoBemVindo:{
+  btnTextoBemVindo: {
     color: 'black',
     fontSize: 20,
     fontWeight: 'bold',
   },
 
-  btnTextoHome:{
+  btnTextoHome: {
     color: 'black',
     fontSize: 20,
     fontWeight: 'bold',
@@ -294,29 +294,29 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    textAlign:"center",
+    textAlign: "center",
     lineHeight: 45, // Adiciona esta linha para alinhar verticalmente
 
   },
 
 
-  textsenha:{
+  textsenha: {
     justifyContent: 'center',
     alignItems: 'flex-end',
     color: 'black',
     paddingLeft: 80,
-    fontSize:10,
+    fontSize: 10,
   },
 
-  textcriar:{
+  textcriar: {
     justifyContent: 'center',
     alignItems: 'flex-end',
     color: 'black',
-    fontSize:25,
+    fontSize: 25,
     marginBottom: '1%',
   },
 
-  textconta:{
+  textconta: {
     justifyContent: 'center',
     alignItems: 'center',
     color: 'black',
@@ -324,7 +324,7 @@ const styles = StyleSheet.create({
     fontSize: 10
   },
 
-  HomeScreen:{
+  HomeScreen: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
