@@ -9,7 +9,7 @@ const CriarConta: React.FC<CriarContaProps> = ({ navigation }) => {
     return (
         <KeyboardAvoidingView style={styles.background}>
             <View style={styles.logo}>
-                <Image style={styles.Image} source={require('../../../assets/React-icon.svg.png')} />
+                <Image style={styles.Image} source={require('../../../assets/logo.png')} />
             </View>
 
             <Text style={styles.textcriar}>CRIE SUA CONTA</Text>

@@ -18,8 +18,6 @@ const Home: React.FC<HomeProps> = ({ navigation = useNavigation() }) => {
             <TouchableOpacity style={styles.btnsetahome} onPress={ () => {navigation.navigate("perfil")}}>
                 <Image style={styles.btnsetaimg} source={require('../../../assets/seta-direita.png')} />
             </TouchableOpacity>
-
-
         </KeyboardAvoidingView >
     );
 };
