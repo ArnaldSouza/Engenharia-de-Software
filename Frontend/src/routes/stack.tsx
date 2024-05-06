@@ -16,4 +16,5 @@ export default function StackComponent() {
   );
 }
 
+
 const Stack = createNativeStackNavigator();
