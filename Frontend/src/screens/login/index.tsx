@@ -1,15 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, KeyboardAvoidingView, Image, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 interface LoginProps {
     navigation: any;
 }
 
-const Login: React.FC<LoginProps> = ({ navigation }) => {
+const Login: React.FC<LoginProps> = ({ navigation = useNavigation() }) => {
     return (
         <KeyboardAvoidingView style={styles.background}>
             <View style={styles.logo}>
-                <Image style={styles.Image} source={require('./assets/React-icon.svg.png')} />
+                <Image style={styles.Image} source={require('../../../assets/React-icon.svg.png')} />
             </View>
 
             <View style={styles.login}>
@@ -32,11 +33,11 @@ const Login: React.FC<LoginProps> = ({ navigation }) => {
                     <Text style={styles.textsenha}>Esqueci minha senha</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.btnHome} onPress={() => navigation.navigate('Home')}>
+                <TouchableOpacity style={styles.btnHome} onPress={() => {navigation.navigate("home")}}>
                     <Text style={styles.btnTextoHome}>Acessar</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.textconta} onPress={() => navigation.navigate('CriarConta')}>
+                <TouchableOpacity style={styles.textconta} onPress={() => {navigation.navigate("criarConta")}}>
                     <Text style={styles.textconta}>Ainda não tem conta ? Criar conta</Text>
                 </TouchableOpacity>
             </View>
@@ -128,3 +129,5 @@ const styles = StyleSheet.create({
       },
 
 });
+
+export default Login;
