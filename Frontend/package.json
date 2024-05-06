@@ -9,6 +9,7 @@
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "*",
+    "@react-navigation/native-stack": "^6.9.26",
     "@react-navigation/stack": "*",
     "@types/react": "~18.2.45",
     "@types/react-native": "^0.73.0",
