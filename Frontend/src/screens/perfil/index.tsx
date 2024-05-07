@@ -13,14 +13,25 @@ const Perfil: React.FC<PerfilProps> = ({ navigation = useNavigation() }) => {
 
             <Text style={styles.textStatus}> STATUS </Text>
 
-            <View>
-                <TouchableOpacity >
-                    <Text> CADASTRAR</Text>
+            <View style={styles.perfilBar}>
+                <TouchableOpacity style={styles.buttonbarperfil} >
+                    <Text style={styles.textphStatus}>PONTOS</Text>
                 </TouchableOpacity>
-
+                <TouchableOpacity style={styles.buttonbarperfil} >
+                    <Text style={styles.textphStatus}>HORAS</Text>
+                </TouchableOpacity>
             </View>
 
-            <View>
+            <View style={styles.barLinguagens}>
+                <TouchableOpacity onPress={() => { navigation.navigate("selecaoModulo") }} style={styles.btnLinguagens}>
+                    <Text style={styles.textLing}>PYTHON</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnLinguagens}>
+                    <Text style={styles.textLing}>JAVA</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btnLinguagens}>
+                    <Text style={styles.textLing}>JAVASCRIPT</Text>
+                </TouchableOpacity>
             </View>
 
         </KeyboardAvoidingView>
@@ -30,11 +41,39 @@ const Perfil: React.FC<PerfilProps> = ({ navigation = useNavigation() }) => {
 
 const styles = StyleSheet.create({
 
+    textphStatus: {
+        color: 'white',
+        alignContent: 'center',
+        justifyContent: 'center'
+    },
+
+    textLing: {
+        color: 'white',
+        textAlign: 'center'
+    },
+    
+    barLinguagens: {
+        flexDirection: "column",
+        marginTop: 10
+    },
+    
+    btnLinguagens: {
+        backgroundColor: "#25A18E",
+        padding: 15,
+        borderRadius: 20,
+        marginTop: 20,
+        color: 'white',
+        marginVertical: 5,
+        paddingLeft: 30,
+        paddingRight: 30,
+        textAlign: 'center' // Centraliza o texto horizontalmente
+    },    
 
     textStatus: {
         justifyContent: "flex-start",
         color: 'white',
-        alignSelf: 'flex-start'
+        alignSelf: 'flex-start',
+        marginLeft: 108,
     },
 
     btnsetaimg: {
@@ -48,7 +87,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
+    perfilBar: {
+        flexDirection: "row"
+    },
 
+    buttonbarperfil: {
+        backgroundColor: "#25A18E",
+        padding: 15,
+        borderWidth: 1,
+        borderColor: "#000",
+
+    },
 
 });
 
