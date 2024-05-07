@@ -8,15 +8,23 @@ interface ModuloProps {
 
 const Modulo: React.FC<ModuloProps> = ({ navigation = useNavigation() }) => {
     return (
-        <KeyboardAvoidingView >
+        <KeyboardAvoidingView style={styles.ModuloScreen}>
             <View>
-                <TouchableOpacity onPress={() => {navigation.navigate("welcome")}}>
-                    <Image source={require('../../../assets/seta-esquerda.png')} />
+                <TouchableOpacity style={styles.setaModulo} onPress={() => {navigation.navigate("welcome")}}>
+                    <Image style={styles.btnsetaimgm} source={require('../../../assets/seta-esquerda.png')} />
                 </TouchableOpacity>
                 
-                <TouchableOpacity ><Text>Iniciante</Text></TouchableOpacity>
-                <TouchableOpacity ><Text>Intermediário</Text></TouchableOpacity>
-                <TouchableOpacity ><Text>Avançado</Text></TouchableOpacity>
+                <View style={styles.barModulo}>
+                    <TouchableOpacity style={styles.btnModulo} >
+                        <Text style={styles.textModulo}>Iniciante</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnModulo} >
+                        <Text style={styles.textModulo}>Intermediário</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnModulo} >
+                        <Text style={styles.textModulo}>Avançado</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </KeyboardAvoidingView >
     );
@@ -24,6 +32,43 @@ const Modulo: React.FC<ModuloProps> = ({ navigation = useNavigation() }) => {
 
 const styles = StyleSheet.create({
 
+    textModulo: {
+        color: 'white',
+        textAlign: 'center'
+    },
+    
+    barModulo: {
+        flexDirection: "column",
+        marginTop: 10,
+    },
+    
+    btnModulo: {
+        backgroundColor: "#7AE582",
+        padding: 15,
+        borderRadius: 20,
+        marginTop: 20,
+        color: 'white',
+        marginVertical: 5,
+        paddingLeft: 30,
+        paddingRight: 30,
+        textAlign: 'center', // Centraliza o texto horizontalmente
+        alignItems: 'center',
+    },    
+
+    ModuloScreen: {
+        flex: 1,
+        backgroundColor: '#004E64',
+    },
+
+    setaModulo:{
+        alignSelf: 'flex-start',
+    },
+
+
+    btnsetaimgm: {
+        height: 100,
+        width: 100,
+    },
 });
 
 export default Modulo;
