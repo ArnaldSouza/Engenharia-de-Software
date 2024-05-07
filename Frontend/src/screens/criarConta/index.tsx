@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, KeyboardAvoidingView, Image, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 interface CriarContaProps {
     navigation: any;
 }
 
-const CriarConta: React.FC<CriarContaProps> = ({ navigation }) => {
+const CriarConta: React.FC<CriarContaProps> = ({ navigation = useNavigation()}) => {
     return (
         <KeyboardAvoidingView style={styles.background}>
             <View style={styles.logo}>
@@ -17,14 +18,14 @@ const CriarConta: React.FC<CriarContaProps> = ({ navigation }) => {
             <View style={styles.login}>
                 <TextInput
                     style={styles.input}
-                    placeholder='Nome'
+                    placeholder='nome'
                     autoCorrect={false}
                     onChangeText={() => { }}
                 />
 
                 <TextInput
                     style={styles.input}
-                    placeholder='Telefone'
+                    placeholder='telefone'
                     autoCorrect={false}
                     onChangeText={() => { }}
                 />
@@ -45,7 +46,7 @@ const CriarConta: React.FC<CriarContaProps> = ({ navigation }) => {
                 />
 
                 <TouchableOpacity style={styles.btnCriar}>
-                    <Text>CRIAR</Text>
+                    <Text onPress={() => { navigation.navigate("login") }} style={styles.textcriar}>CADASTRAR</Text>
                 </TouchableOpacity>
             </View>
         </KeyboardAvoidingView>
@@ -57,15 +58,17 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: '#25A18E',
     },
 
     logo: {
-        flex: 1,
-        justifyContent: 'center',
-        marginTop: 'auto',
-        marginBottom: 'auto',
-        alignContent: 'center',
+        justifyContent: 'center',        
+        alignContent: 'center'
+    },
+
+    Image: {
+        width: 150,
+        height: 150
     },
 
     login: {
@@ -74,17 +77,12 @@ const styles = StyleSheet.create({
         width: '90%'
     },
 
-    Image: {
-        width: 230,
-        height: 200,
-    },
-
     textcriar: {
         justifyContent: 'center',
         alignItems: 'flex-end',
-        color: 'black',
+        color: 'white',
         fontSize: 25,
-        marginBottom: '1%',
+        marginBottom: '1%'
     },
 
     input: {
@@ -92,19 +90,19 @@ const styles = StyleSheet.create({
         width: '90%',
         marginBottom: 20,
         color: '#222',
-        fontSize: 17,
+        fontSize: 12,
         borderWidth: 1,
         borderColor: '#000',
-        borderRadius: 0,
+        borderRadius: 20,
         padding: 10,
     },
 
     btnCriar: {
         marginTop: '30%',
-        backgroundColor: 'white',
+        backgroundColor: '#004E64',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 0,
+        borderRadius: 20,
         width: '90%',
         height: 45,
         borderColor: '#black',

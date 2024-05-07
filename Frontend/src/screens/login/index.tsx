@@ -33,7 +33,7 @@ const Login: React.FC<LoginProps> = ({ navigation = useNavigation() }) => {
           <Text style={styles.textsenha}>Esqueci minha senha</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.btnHome} onPress={() => { navigation.navigate("home") }}>
+        <TouchableOpacity style={styles.btnHome} onPress={() => { navigation.navigate("welcome") }}>
           <Text style={styles.btnTextoHome}>LOGIN</Text>
         </TouchableOpacity>
 
@@ -127,8 +127,8 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'flex-end',
     color: 'white',
-    marginTop: '1%',
-    fontSize: 10
+    marginTop: '3%',
+    fontSize: 12
   } 
 
 });
