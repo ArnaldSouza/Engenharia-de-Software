@@ -9,13 +9,13 @@ interface MissoesProps {
 const Missoes: React.FC<MissoesProps> = ({ navigation = useNavigation() }) => {
     return (
         <KeyboardAvoidingView >
-            <View>
-                <TouchableOpacity onPress={() => { navigation.navigate("selecaoModulo") }}>
-                    <Image source={require('../../../assets/seta-esquerda.png')} />
+            <View style={styles.viewTop}>
+                <TouchableOpacity style={styles.setaModulo} onPress={() => { navigation.navigate("licao") }}>
+                    <Image style={styles.btnsetaimgm} source={require('../../../assets/setaModulo.png')} />
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => { navigation.navigate("material") }}> 
-                    <Image source={require('../../../assets/livro.png')} />
+                <TouchableOpacity style={styles.livro} onPress={() => { navigation.navigate("material") }}> 
+                    <Image style={styles.livroImg} source={require('../../../assets/livro.png')} />
                 </TouchableOpacity>
             </View>
 
@@ -30,7 +30,28 @@ const Missoes: React.FC<MissoesProps> = ({ navigation = useNavigation() }) => {
 };
 
 const styles = StyleSheet.create({
+    viewTop:{
+        flexDirection: "row"
+    },
+    
+    setaModulo:{
+        alignSelf: 'flex-start',
+    },
 
+    btnsetaimgm: {
+        height: 75,
+        width: 75,
+    },
+
+    livro:{
+        alignSelf: 'flex-end',
+        paddingLeft: 225
+    },
+
+    livroImg:{
+        height: 50,
+        width: 50
+    },
 });
 
 export default Missoes;

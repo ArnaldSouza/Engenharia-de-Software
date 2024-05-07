@@ -9,18 +9,20 @@ import login from '../screens/login';
 import welcome from '../screens/bemVindo';
 import selecaoModulo from '../screens/selecaoModulo';
 import missoes from '../screens/missoes';
+import licao from '../screens/licao'
 
 
 export default function StackComponent() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name ="login" component={login} />
-        <Stack.Screen name ="perfil" component={perfil} />  
-        <Stack.Screen name ="criarConta" component={criarConta} /> 
-        <Stack.Screen name = "welcome" component={welcome} />
-        <Stack.Screen name = "selecaoModulo" component={selecaoModulo} />
-        <Stack.Screen name = "missoes" component={missoes} />
+        <Stack.Screen options={{headerTransparent:true, title:"", headerShown: false}} name ="login" component={login} />
+        <Stack.Screen options={{headerTransparent:true, title:"", headerShown: false}} name ="perfil" component={perfil} />  
+        <Stack.Screen options={{headerTransparent:true, title:"", headerShown: false}} name ="criarConta" component={criarConta} /> 
+        <Stack.Screen options={{headerTransparent:true, title:"", headerShown: false}} name = "welcome" component={welcome} />
+        <Stack.Screen options={{headerTransparent:true, title:"", headerShown: false}} name = "selecaoModulo" component={selecaoModulo} />
+        <Stack.Screen options={{headerTransparent:true, title:"", headerShown: false}} name = "missoes" component={missoes} />
+        <Stack.Screen options={{headerTransparent:true, title:"", headerShown: false}} name = "licao" component={licao} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -10,12 +10,12 @@ const Modulo: React.FC<ModuloProps> = ({ navigation = useNavigation() }) => {
     return (
         <KeyboardAvoidingView style={styles.ModuloScreen}>
             <View>
-                <TouchableOpacity style={styles.setaModulo} onPress={() => {navigation.navigate("welcome")}}>
-                    <Image style={styles.btnsetaimgm} source={require('../../../assets/seta-esquerda.png')} />
+                <TouchableOpacity style={styles.setaModulo} onPress={() => {navigation.navigate("perfil")}}>
+                    <Image style={styles.btnsetaimgm} source={require('../../../assets/setaModulo.png')} />
                 </TouchableOpacity>
                 
                 <View style={styles.barModulo}>
-                    <TouchableOpacity style={styles.btnModulo} >
+                    <TouchableOpacity onPress={() => { navigation.navigate("licao") }} style={styles.btnModulo} >
                         <Text style={styles.textModulo}>Iniciante</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnModulo} >
@@ -33,13 +33,14 @@ const Modulo: React.FC<ModuloProps> = ({ navigation = useNavigation() }) => {
 const styles = StyleSheet.create({
 
     textModulo: {
-        color: 'white',
-        textAlign: 'center'
+        color: 'black',
+        textAlign: 'center', 
+        fontWeight: 'bold',
     },
     
     barModulo: {
         flexDirection: "column",
-        marginTop: 10,
+        marginTop: 100,
     },
     
     btnModulo: {
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
         marginVertical: 5,
         paddingLeft: 30,
         paddingRight: 30,
-        textAlign: 'center', // Centraliza o texto horizontalmente
+        textAlign: 'center',
         alignItems: 'center',
     },    
 
@@ -66,8 +67,8 @@ const styles = StyleSheet.create({
 
 
     btnsetaimgm: {
-        height: 100,
-        width: 100,
+        height: 50,
+        width: 50,
     },
 });
 

@@ -15,17 +15,17 @@ const Welcome: React.FC<WelcomeProps> = ({ navigation = useNavigation() }) => {
                 <Text style={styles.text}> INTRODUÇÃO </Text>
 
                 <Text style={styles.text} >
-                        Prepare-se para embarcar em uma jornada épica através do mundo da programação, onde cada linha de código
+                    Prepare-se para embarcar em uma jornada épica através do mundo da programação, onde cada linha de código
                     é uma nova descoberta e cada desafio é uma oportunidade de crescimento.
                 </Text>
 
                 <Text style={styles.text}>
-                        Você desvendar segredos, resolver quebra-cabeças e desafiar seu intelecto de maneiras que você jamais imaginou.
+                    Você desvendar segredos, resolver quebra-cabeças e desafiar seu intelecto de maneiras que você jamais imaginou.
                     E lembre-se, mesmo nos momentos de dificuldade, cada erro é apenas mais uma oportunidade de aprender e crescer.
                 </Text>
 
                 <Text style={styles.text}>
-                        Então, aventureiro, o que está esperando? Seu destino aguarda. Prepare-se para iniciar sua jornada na Dev Route e
+                    Então, aventureiro, o que está esperando? Seu destino aguarda. Prepare-se para iniciar sua jornada na Dev Route e
                     transformar-se no programador que sempre sonhou ser!
                 </Text>
 

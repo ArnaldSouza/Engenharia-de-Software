@@ -8,22 +8,67 @@ interface LicaoProps {
 
 const Licao: React.FC<LicaoProps> = ({ navigation = useNavigation() }) => {
     return (
-        <KeyboardAvoidingView >
+        <KeyboardAvoidingView style={styles.ModuloScreen}>
             <View>
-                <TouchableOpacity onPress={() => {navigation.navigate("selecaoModulo")}}>
-                    <Image source={require('../../../assets/seta-esquerda.png')} />
+                <TouchableOpacity style={styles.setaModulo} onPress={() => {navigation.navigate("selecaoModulo")}}>
+                    <Image style={styles.btnsetaimgm} source={require('../../../assets/setaModulo.png')} />
                 </TouchableOpacity>
                 
-                <TouchableOpacity ><Text>Introdução</Text></TouchableOpacity>
-                <TouchableOpacity ><Text>Missões</Text></TouchableOpacity>
-                <TouchableOpacity ><Text>Material</Text></TouchableOpacity>
+                <View style={styles.barModulo}>
+                    <TouchableOpacity onPress={() => { navigation.navigate("missoes") }} style={styles.btnModulo} >
+                        <Text style={styles.textModulo}>Introdução</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnModulo} >
+                        <Text style={styles.textModulo}>Missões</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnModulo} >
+                        <Text style={styles.textModulo}>Material</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </KeyboardAvoidingView >
     );
 };
 
 const styles = StyleSheet.create({
+    textModulo: {
+        color: 'black',
+        textAlign: 'center', 
+        fontWeight: 'bold',
+    },
+    
+    barModulo: {
+        flexDirection: "column",
+        marginTop: 100,
+    },
+    
+    btnModulo: {
+        backgroundColor: "#7AE582",
+        padding: 15,
+        borderRadius: 20,
+        marginTop: 20,
+        color: 'white',
+        marginVertical: 5,
+        paddingLeft: 30,
+        paddingRight: 30,
+        textAlign: 'center',
+        alignItems: 'center',
+    },    
 
+    ModuloScreen: {
+        flex: 1,
+        backgroundColor: '#004E64',
+    },
+
+    setaModulo:{
+        alignSelf: 'flex-start',
+    },
+
+
+    btnsetaimgm: {
+        height: 50,
+        width: 50,
+    },
 });
 
 export default Licao;
