@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     
     setaModulo:{
         alignSelf: 'flex-start',
+        paddingTop: 50,
     },
 
     btnsetaimgm: {

@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
         paddingRight: 30,
         textAlign: 'center',
         alignItems: 'center',
+        width: '75%',
+        marginLeft: '12.5%',
     },    
 
     ModuloScreen: {
@@ -62,6 +64,7 @@ const styles = StyleSheet.create({
 
     setaModulo:{
         alignSelf: 'flex-start',
+        paddingTop: 50,
     },
 
 
