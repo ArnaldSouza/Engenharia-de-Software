@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, KeyboardAvoidingView, Image, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 interface WelcomeProps {

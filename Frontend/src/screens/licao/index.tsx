@@ -15,10 +15,10 @@ const Licao: React.FC<LicaoProps> = ({ navigation = useNavigation() }) => {
                 </TouchableOpacity>
                 
                 <View style={styles.barModulo}>
-                    <TouchableOpacity onPress={() => { navigation.navigate("missoes") }} style={styles.btnModulo} >
+                    <TouchableOpacity  style={styles.btnModulo} onPress={() => { navigation.navigate("introducao") }}>
                         <Text style={styles.textModulo}>Introdução</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.btnModulo} >
+                    <TouchableOpacity onPress={() => { navigation.navigate("missoes") }} style={styles.btnModulo} >
                         <Text style={styles.textModulo}>Missões</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnModulo} >
