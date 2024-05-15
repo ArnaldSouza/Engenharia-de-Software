@@ -15,11 +15,14 @@
     "@react-native-firebase/firestore": "^19.1.1",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/stack": "^6.3.29",
-    "expo": "~50.0.14",
-    "expo-status-bar": "~1.11.1",
+    "@rivascva/react-native-code-editor": "^1.2.2",
+    "axios": "^1.6.8",
+    "expo": "^51.0.2",
+    "expo-status-bar": "~1.12.1",
     "firebase": "^10.10.0",
     "react": "18.2.0",
-    "react-native": "0.73.6"
+    "react-native": "0.74.1",
+    "react-native-code-editor": "^0.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
