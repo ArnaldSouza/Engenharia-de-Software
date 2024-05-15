@@ -59,16 +59,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#25A18E',
+        paddingTop: 50,
     },
 
     logo: {
         justifyContent: 'center',        
-        alignContent: 'center'
+        alignContent: 'center',
+        paddingBottom: 50,
     },
 
     Image: {
         width: 150,
-        height: 150
+        height: 150,
     },
 
     login: {

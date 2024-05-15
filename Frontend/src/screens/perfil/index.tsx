@@ -64,8 +64,8 @@ const styles = StyleSheet.create({
         marginTop: 20,
         color: 'white',
         marginVertical: 5,
-        paddingLeft: 30,
-        paddingRight: 30,
+        paddingLeft: 50,
+        paddingRight: 50,
         textAlign: 'center' // Centraliza o texto horizontalmente
     },    
 
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
         color: 'white',
         alignSelf: 'flex-start',
         marginLeft: 108,
+        paddingTop: 50,
     },
 
     btnsetaimg: {
@@ -85,6 +86,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#004E64',
         alignItems: 'center',
+        paddingTop: 50,
     },
 
     perfilBar: {

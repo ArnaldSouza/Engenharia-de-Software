@@ -15,10 +15,10 @@ const Licao: React.FC<LicaoProps> = ({ navigation = useNavigation() }) => {
                 </TouchableOpacity>
                 
                 <View style={styles.barModulo}>
-                    <TouchableOpacity onPress={() => { navigation.navigate("missoes") }} style={styles.btnModulo} >
+                    <TouchableOpacity  style={styles.btnModulo} onPress={() => { navigation.navigate("introducao") }}>
                         <Text style={styles.textModulo}>Introdução</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.btnModulo} >
+                    <TouchableOpacity onPress={() => { navigation.navigate("missoes") }} style={styles.btnModulo} >
                         <Text style={styles.textModulo}>Missões</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.btnModulo} >
@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
         paddingRight: 30,
         textAlign: 'center',
         alignItems: 'center',
+        width: '75%',
+        marginLeft: '12.5%',
     },    
 
     ModuloScreen: {
@@ -62,6 +64,7 @@ const styles = StyleSheet.create({
 
     setaModulo:{
         alignSelf: 'flex-start',
+        paddingTop: 50,
     },
 
 
