@@ -11,7 +11,8 @@ const Welcome: React.FC<WelcomeProps> = ({ navigation = useNavigation() }) => {
 
         <ImageBackground style={styles.container}
             source={require('../../../assets/background.png')}>
-            <View style={styles.content}>
+            <View>
+                <View style={styles.content}>
                 <Text style={styles.text}> INTRODUÇÃO </Text>
 
                 <Text style={styles.text} >
@@ -28,7 +29,7 @@ const Welcome: React.FC<WelcomeProps> = ({ navigation = useNavigation() }) => {
                     Então, aventureiro, o que está esperando? Seu destino aguarda. Prepare-se para iniciar sua jornada na Dev Route e
                     transformar-se no programador que sempre sonhou ser!
                 </Text>
-
+                </View>
 
             </View >
 
@@ -53,15 +54,17 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    
     content: {
-        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         paddingHorizontal: 20,
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        width: '100%',
-        height: '100%'
+        maxWidth: '80%', // Definir uma largura máxima para o conteúdo
+        paddingVertical: 20, // Adicionar um espaçamento vertical para separar do fundo
     },
+    
+
     buttonContainer: {
         position: 'absolute',
         bottom: 20,
