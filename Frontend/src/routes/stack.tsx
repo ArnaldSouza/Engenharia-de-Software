@@ -11,6 +11,7 @@ import selecaoModulo from '../screens/selecaoModulo';
 import missoes from '../screens/missoes';
 import licao from '../screens/licao';
 import introducao from '../screens/introducao';
+import Pergunta from '../screens/pergunta';
 
 
 export default function StackComponent() {
@@ -25,6 +26,7 @@ export default function StackComponent() {
         <Stack.Screen options={{ headerTransparent: true, title: "", headerShown: false }} name="missoes" component={missoes} />
         <Stack.Screen options={{ headerTransparent: true, title: "", headerShown: false }} name="licao" component={licao} />
         <Stack.Screen options={{ headerTransparent: true, title: "", headerShown: false }} name="introducao" component={introducao} />
+        <Stack.Screen options={{ headerTransparent: true, title: "", headerShown: false }} name="pergunta" component={Pergunta} />
       </Stack.Navigator>
     </NavigationContainer>
   );

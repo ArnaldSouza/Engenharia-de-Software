@@ -21,7 +21,7 @@ const Missoes: React.FC<MissoesProps> = ({ navigation = useNavigation() }) => {
 
             <View style={styles.viewBottom}>
                 <View style={styles.buttons}>
-                    <TouchableOpacity  >
+                    <TouchableOpacity onPress={() => { navigation.navigate("pergunta") }}>
                         <Image style={styles.numero} source={require('../../../assets/btn1.png')} />
                     </TouchableOpacity>
                     <TouchableOpacity >
